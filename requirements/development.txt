@@ -1,6 +1,6 @@
 -r test.txt
-django-extensions
-werkzeug
-django-debug-toolbar
-bpython
-django-template-debug
+django-extensions==1.5.5
+werkzeug==0.10.4
+django-debug-toolbar==1.3.2
+bpython==0.14.2
+django-template-debug==0.3.5
