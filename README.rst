@@ -79,7 +79,7 @@ If you need Browserify and PostCSS support, you must have node.js installed and 
 Local settings
 --------------
 
-Create a ``config/settings/local.py`` file with local settings or remove this import from ``config/settings/__init__.py`` (this file is ignored by git). Minimal ``local.py`` file can contain this code:
+Create a ``config/settings/local.py`` file (it's ignored by git) with local settings or remove this import from ``config/settings/__init__.py``. Minimal ``local.py`` file can contain this code:
 
 .. code-block:: python
 
