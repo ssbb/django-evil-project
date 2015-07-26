@@ -1,0 +1,6 @@
+-r test.txt
+django-extensions
+werkzeug
+django-debug-toolbar
+bpython
+django-template-debug
