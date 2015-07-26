@@ -74,3 +74,5 @@ config/settings/local.py
 # node.js staff
 /node_modules
 /bower_components
+
+/README.html

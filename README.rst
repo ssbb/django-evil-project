@@ -48,7 +48,7 @@ Then you can create a new Django project with django-evil-project template:
 
 .. code-block:: bash
 
-   $ django-admin createproject --template https://github.com/ssbb/django-evil-project/zipball/master myproject
+   $ django-admin startproject --template https://github.com/ssbb/django-evil-project/zipball/master myproject
 
 Installation of dependencies
 ----------------------------
