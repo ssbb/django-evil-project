@@ -18,7 +18,7 @@ Features
 
     - `django-extensions <https://github.com/django-extensions/django-extensions>`_
     - `django-debug-toolbar <https://github.com/django-debug-toolbar/django-debug-toolbar>`_
-    - `bpython <http://bpython-interpreter.org/screenshots>`_
+    - `ipython <http://ipython.org/>`_
     - `django-template-debug <https://github.com/calebsmith/django-template-debug>`_
 
   - Test only:
