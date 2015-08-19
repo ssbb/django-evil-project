@@ -13,7 +13,6 @@ Features
 
   - `psycopg2 <https://pypi.python.org/pypi/psycopg2>`_
   - `django-braces <https://github.com/brack3t/django-braces>`_
-  - `django-model-utils <https://github.com/carljm/django-model-utils>`_
   - Development only:
 
     - `django-extensions <https://github.com/django-extensions/django-extensions>`_
