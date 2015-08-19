@@ -13,3 +13,5 @@ MIDDLEWARE_CLASSES = (
 
 # https://github.com/calebsmith/django-template-debug
 TEMPLATE_DEBUG = True
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
