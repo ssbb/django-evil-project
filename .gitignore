@@ -76,3 +76,5 @@ config/settings/local.py
 /bower_components
 
 /README.html
+
+.DS_Store
