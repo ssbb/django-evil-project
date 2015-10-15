@@ -1,0 +1,9 @@
+[run]
+source=
+  apps/
+omit=
+  apps/*/migrations/*
+parallel = true
+
+[report]
+skip_covered = true
