@@ -1,3 +1,4 @@
 django==1.8.5
 psycopg2==2.6.1
 django-braces==1.8.1
+pillow==3.0.0
