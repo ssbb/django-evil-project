@@ -1,4 +1,6 @@
-django==1.8.5
+django==1.8.6
 psycopg2==2.6.1
 django-braces==1.8.1
 pillow==3.0.0
+libsass==0.9.1
+django-pipeline==1.5.4

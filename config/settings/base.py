@@ -1,6 +1,5 @@
 import os
 
-
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.abspath(__file__))))
 
@@ -28,6 +27,7 @@ INSTALLED_APPS += (
 
 # External applications
 INSTALLED_APPS += (
+    'pipeline',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -89,6 +89,12 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'staticfiles'),
 )
+STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'pipeline.finders.PipelineFinder',
+)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -96,3 +102,29 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 LOCALE_PATHS = os.path.join(BASE_DIR, 'locale'),
 
 SITE_ID = 1
+
+PIPELINE_CSS = {
+    'app': {
+        'source_filenames': (
+            'stylesheets/application.scss',
+        ),
+        'output_filename': 'stylesheets/application.css',
+        'extra_context': {
+            'media': 'screen,projection',
+        },
+    },
+}
+
+PIPELINE_JS = {
+    'app': {
+        'source_filenames': (
+            # Main app
+            'javascripts/applicaiton.js',
+        ),
+        'output_filename': 'javascripts/application.js',
+    }
+}
+PIPELINE_COMPILERS = (
+    'pipeline.compilers.sass.SASSCompiler',
+)
+PIPELINE_SASS_BINARY = 'sassc'
