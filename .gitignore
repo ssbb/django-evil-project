@@ -78,3 +78,5 @@ config/settings/local.py
 /README.html
 
 .DS_Store
+
+staticfiles/components
