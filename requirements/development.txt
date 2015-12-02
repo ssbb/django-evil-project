@@ -4,4 +4,3 @@ werkzeug==0.10.4
 django-debug-toolbar==1.4
 ipython==4.0.0
 ipdb==0.8.1
-django-template-debug==0.3.5

@@ -104,7 +104,7 @@ LOCALE_PATHS = os.path.join(BASE_DIR, 'locale'),
 SITE_ID = 1
 
 PIPELINE_CSS = {
-    'app': {
+    'application': {
         'source_filenames': (
             'stylesheets/application.scss',
         ),
@@ -116,7 +116,7 @@ PIPELINE_CSS = {
 }
 
 PIPELINE_JS = {
-    'app': {
+    'application': {
         'source_filenames': (
             # Main app
             'javascripts/applicaiton.js',
