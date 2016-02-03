@@ -103,28 +103,29 @@ LOCALE_PATHS = os.path.join(BASE_DIR, 'locale'),
 
 SITE_ID = 1
 
-PIPELINE_CSS = {
-    'application': {
-        'source_filenames': (
-            'stylesheets/application.scss',
-        ),
-        'output_filename': 'stylesheets/application.css',
-        'extra_context': {
-            'media': 'screen,projection',
+PIPELINE = {
+    'STYLESHEETS': {
+        'application': {
+            'source_filenames': (
+                'stylesheets/application.scss',
+            ),
+            'output_filename': 'stylesheets/application.css',
+            'extra_context': {
+                'media': 'screen,projection',
+            },
         },
     },
+    'JAVASCRIPT': {
+        'application': {
+            'source_filenames': (
+                # Main app
+                'javascripts/applicaiton.js',
+            ),
+            'output_filename': 'javascripts/application.js',
+        }
+    },
+    'COMPILERS': (
+        'pipeline.compilers.sass.SASSCompiler',
+    ),
+    'SASS_BINARY': 'sassc',
 }
-
-PIPELINE_JS = {
-    'application': {
-        'source_filenames': (
-            # Main app
-            'javascripts/applicaiton.js',
-        ),
-        'output_filename': 'javascripts/application.js',
-    }
-}
-PIPELINE_COMPILERS = (
-    'pipeline.compilers.sass.SASSCompiler',
-)
-PIPELINE_SASS_BINARY = 'sassc'
