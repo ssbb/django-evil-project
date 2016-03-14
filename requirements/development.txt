@@ -1,6 +1,5 @@
 -r test.txt
 django-extensions==1.6.1
-werkzeug==0.11.3
+werkzeug==0.11.4
 django-debug-toolbar==1.4
-ipython==4.1.0
-ipdb==0.8.1
+ipdb==0.9.0
